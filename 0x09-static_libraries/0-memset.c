@@ -1,20 +1,20 @@
-#include "holberton.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
- * _memset - ironnou
- * @s: pointer to char params
- * @b: data to change
- * @n: index
- * Return: *s
+ * _memset - function that fills memory with a constant byte
+ * @s: type char pointer
+ * @b: type char pointer
+ * @n: type char bytes of mem pointed by s with constant byte b
+ * Return: s
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	unsigned int z;
 
-	for (i = 0; i < n; i++)
+	for (z = 0; z < n; z++)
 	{
-		s[i] = b;
+		s[z] = b;
 	}
 	return (s);
 }
